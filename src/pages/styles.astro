@@ -3,10 +3,6 @@ import "../styles.css";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<script>
-  import { SimpleGreeting } from "../../../components/mod";
-</script>
-
 <Layout>
   <the-logo></the-logo>
   <h1>Heading 1</h1>
@@ -20,6 +16,7 @@ import Layout from "../layouts/Layout.astro";
     tempus vehicula.
   </p>
   <p>This is an <em>em</em> element.</p>
+  <p>This is a <a href="/">Link</a></p>
 
   <ul>
     <li>This is a list item</li>
@@ -29,7 +26,12 @@ import Layout from "../layouts/Layout.astro";
     </ul>
   </ul>
 
+  <p>To mark text: <mark>This is a highlight</mark></p>
   <br />
   <blockquote>This is a blockquote</blockquote>
   <hr />
+  <the-button b_type="primary">Click Me</the-button>
+  <br />
+  <br />
+  <the-button b_type="secondary">Click Me</the-button>
 </Layout>

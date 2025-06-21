@@ -1,4 +1,5 @@
 ---
+import "@the-frozen-leaf/styles/styles.css";
 import "../styles.css";
 ---
 
@@ -13,6 +14,12 @@ import "../styles.css";
   <body>
     <slot />
   </body>
+  <script>
+    import { TheLogo } from "@the-frozen-leaf/components/logo";
+    import { TheButton } from "@the-frozen-leaf/components/button";
+    customElements.define("the-logo", TheLogo);
+    customElements.define("the-button", TheButton);
+  </script>
 </html>
 
 <style>

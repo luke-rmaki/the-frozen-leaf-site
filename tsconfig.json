@@ -1,5 +1,11 @@
 {
   "extends": "astro/tsconfigs/strict",
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "baseUrl": ".", // Ensure this is set to the root of the current package
+    "paths": {
+      "@the-frozen-leaf/components/*": ["../../packages/components/src/*"]
+    }
+  }
 }
